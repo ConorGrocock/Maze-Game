@@ -1,0 +1,6 @@
+A:\C#\MazeGame\MazeGame\bin\Debug\MazeGame.exe.config
+A:\C#\MazeGame\MazeGame\bin\Debug\MazeGame.exe
+A:\C#\MazeGame\MazeGame\bin\Debug\MazeGame.pdb
+A:\C#\MazeGame\MazeGame\obj\Debug\MazeGame.csprojResolveAssemblyReference.cache
+A:\C#\MazeGame\MazeGame\obj\Debug\MazeGame.exe
+A:\C#\MazeGame\MazeGame\obj\Debug\MazeGame.pdb
