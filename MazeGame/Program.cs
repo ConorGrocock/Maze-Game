@@ -11,7 +11,7 @@ namespace MazeGame {
     class Program {
         public static Program _instance = null;
         public Player player;
-        public Map.Map m;
+        public Map.Map map;
         public Infomation info;
         public List<Enemy> enemys;
         public bool gameOver = false;
@@ -32,12 +32,14 @@ namespace MazeGame {
                 else {
                     Console.WriteLine("  Play");
                 }
+
                 if (selectedIndex == 1) {
                     Console.WriteLine("> Help <");
                 }
                 else {
                     Console.WriteLine("  Help");
                 }
+                
                 if (selectedIndex == 2) {
                     Console.WriteLine("> Quit <");
                 }
@@ -77,11 +79,11 @@ namespace MazeGame {
 
         public void game() {
             this.player = new Player(this, 5, 5);
-            this.m = new Map.Map(this.player);
+            this.map = new Map.Map(this.player);
             this.enemys = new List<Enemy>();
             this.info = new Infomation();
 
-            m.randomPlacement();
+            map.randomPlacement();
 
             this.enemys.Add(new Enemy(this, 2, 2));
             this.enemys.Add(new Enemy(this, 2, 5));
@@ -89,7 +91,7 @@ namespace MazeGame {
             this.enemys.Add(new Enemy(this, 5, 2));
 
             while (!gameOver) {
-                m.Draw();
+                map.Draw();
                 player.update();
             }
 
