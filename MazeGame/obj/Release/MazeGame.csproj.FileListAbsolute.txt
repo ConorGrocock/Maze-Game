@@ -1,5 +1,0 @@
-A:\C#\MazeGame\MazeGame\bin\Release\MazeGame.exe.config
-A:\C#\MazeGame\MazeGame\bin\Release\MazeGame.exe
-A:\C#\MazeGame\MazeGame\bin\Release\MazeGame.pdb
-A:\C#\MazeGame\MazeGame\obj\Release\MazeGame.exe
-A:\C#\MazeGame\MazeGame\obj\Release\MazeGame.pdb
