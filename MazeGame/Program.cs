@@ -10,7 +10,7 @@ using MazeGame.Util;
 namespace MazeGame {
     class Program {
         public static Program _instance = null;
-        public Player p;
+        public Player player;
         public Map.Map m;
         public Infomation info;
         public List<Enemy> enemys;
@@ -76,8 +76,8 @@ namespace MazeGame {
         }
 
         public void game() {
-            this.p = new Player(this, 5, 5);
-            this.m = new Map.Map(this.p);
+            this.player = new Player(this, 5, 5);
+            this.m = new Map.Map(this.player);
             this.enemys = new List<Enemy>();
             this.info = new Infomation();
 
@@ -90,7 +90,7 @@ namespace MazeGame {
 
             while (!gameOver) {
                 m.Draw();
-                p.update();
+                player.update();
             }
 
             Console.Clear();
@@ -99,8 +99,8 @@ namespace MazeGame {
                 Console.WriteLine("You suck");
             } else {
                 Console.WriteLine("Game over");
-                Console.WriteLine("You collected {0} gold.", p.gold);
-                Console.WriteLine("You collected {0} Red, {1} Green, and {2} Blue keys.", p.keys['r'], p.keys['g'], p.keys['b']);
+                Console.WriteLine("You collected {0} gold.", player.gold);
+                Console.WriteLine("You collected {0} Red, {1} Green, and {2} Blue keys.", player.keys['r'], player.keys['g'], player.keys['b']);
             }
             Console.Read();
         }
@@ -112,7 +112,7 @@ namespace MazeGame {
         }
 
         public void postMapDraw() {
-            p.postMapDraw();
+            player.postMapDraw();
         }
     }
 }
